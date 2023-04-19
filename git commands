@@ -1,0 +1,39 @@
+git --version
+git config --global user.name
+git config --global user.email
+git init
+* mkdir then cd into it and then  git init in it to initialise it, .git gets created which keeps track of things...
+git status
+# to check current status
+git status --short
+* short status, tags meanings
+   ?? - Untracked files
+    A - Files added to stage
+    M - Modified files
+    D - Deleted files
+git add <filename> 
+* to start tracking that file name 
+# add or stage or track all same
+git add -all 
+git add -A
+* to add all the things in the current directory
+# As you are working, you may be adding, editing and removing files. But whenever you hit a milestone or finish a part of the work, you should add the files to a Staging Environment.
+git commit -m <message>
+* to commit all staged files, always include a message so that it will be easy for you in the future when refering to the previou8s versions to select the one you want
+git commit -a
+# not recommended but can skip staging for small changes
+git log
+# log
+git branch <branchname>
+* create a new branch as <branchname>
+git branch
+# to check all the branches, * shows the current branch
+git checkout <branchname>
+# to move to the <branchname> branch
+git checkout -b <branchname>
+* will create if does not exist and change branch to <branchname>
+git merge <branchname>
+* go to parent branch and do this command, <branchname> can be deleted now by git branch -d <branchname>
+git remote add origin <link>
+# 
+
